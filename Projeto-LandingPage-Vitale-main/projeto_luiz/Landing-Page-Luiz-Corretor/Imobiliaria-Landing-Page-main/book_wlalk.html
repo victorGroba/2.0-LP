@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Book do Imóvel</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .pdf-container {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #00e676;
+            /* verde neon mais chamativo */
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s, transform 0.3s;
+            z-index: 999;
+            animation: pulse 2s infinite;
+            /* aqui adiciona o pulso */
+        }
+
+        .whatsapp-button:hover {
+            background-color: #00c853;
+            /* um verde neon mais escuro no hover */
+            transform: scale(1.05);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Animação para o botão pulsar */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 230, 118, 0.7);
+            }
+
+            70% {
+                transform: scale(1.1);
+                box-shadow: 0 0 0 15px rgba(0, 230, 118, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 230, 118, 0);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="pdf-container">
+        <iframe src="./assets/pdf/book-walk DIGITAL.pdf" frameborder="0"></iframe>
+    </div>
+
+    <a class="whatsapp-button" href="https://wa.me/5521969421733?text=Ol%C3%A1%2C+acabei+de+visualizar+o+Book+do+empreendimento+Vitale+Walk+e+gostaria+de+mais+informa%C3%A7%C3%B5es%21
+" target="_blank">
+        <i class='bx bxl-whatsapp'></i> Atendimento Imediato
+    </a>
+
+</body>
+
+</html>
+
+
+
+
